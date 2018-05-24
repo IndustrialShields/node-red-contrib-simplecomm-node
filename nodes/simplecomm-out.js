@@ -11,9 +11,9 @@ module.exports = function(RED) {
 			if (dest === undefined) {
 				dest = config.destination || 0;
 			}
-			let cmd = msg.command;
+			let cmd = msg.type;
 			if (cmd === undefined) {
-				cmd = config.command || 0;
+				cmd = config.type || 0;
 			}
 			let data = msg.payload;
 			if (data === undefined) {

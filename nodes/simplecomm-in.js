@@ -15,12 +15,12 @@ module.exports = function(RED) {
 			let packets = simplecomm.fromBuffer(msg.payload);
 			for (let packet of packets) {
 				if (this.config.address == packet.destination) {
-					if (typeof config.command == "undefined" || config.command === "" || config.command == packet.type) {
+					if (typeof config.type == "undefined" || config.type === "" || config.type == packet.type) {
 						this.send({
 							payload: packet.data,
 							destination: packet.destination,
 							source: packet.source,
-							command: packet.type,
+							type: packet.type,
 							metadata: metadata,
 						});
 					}
