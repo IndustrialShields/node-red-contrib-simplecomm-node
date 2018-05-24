@@ -15,7 +15,7 @@ function isByte(value) {
 				required: true,
 				type: 'simplecomm-config',
 			},
-			type: {
+			command: {
 				value: 0,
 				required: true,
 				validate: isByte,
@@ -44,8 +44,8 @@ function isByte(value) {
     <input type="text" id="node-input-config" placeholder="Configuration">
   </div>
   <div class="form-row">
-    <label for="node-input-type">Type</label>
-    <input type="text" id="node-input-type" placeholder="Type">
+    <label for="node-input-command">Command</label>
+    <input type="text" id="node-input-command" placeholder="Command">
   </div>
   <div class="form-row">
     <label for="node-input-destination">Destination</label>
