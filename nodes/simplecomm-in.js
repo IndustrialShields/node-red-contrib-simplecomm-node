@@ -7,6 +7,11 @@ module.exports = function(RED) {
 		this.config = RED.nodes.getNode(config.config);
 
 		this.on("input", (msg) => {
+			let metadata = {};
+			if (msg.ip) {
+				metadata.ip = msg.ip;
+			}
+
 			let packets = simplecomm.fromBuffer(msg.payload);
 			for (let packet of packets) {
 				if (this.config.address == packet.destination) {
@@ -16,6 +21,7 @@ module.exports = function(RED) {
 							destination: packet.destination,
 							source: packet.source,
 							command: packet.type,
+							metadata: metadata,
 						});
 					}
 				}
