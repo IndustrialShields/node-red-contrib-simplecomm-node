@@ -3,18 +3,18 @@
   "version": "1.0.0",
   "description": "A simple communication node for node-RED",
   "keywords": [
-	  "Industrial Shields",
-	  "SimpleComm",
-	  "node-red",
-	  "industrial",
-	  "arduino"
+    "Industrial Shields",
+    "SimpleComm",
+    "node-red",
+    "industrial",
+    "arduino"
   ],
   "repository": {
-	  "type": "git",
-	  "url": "https://github.com/IndustrialShields/node-red-contrib-simplecomm-node.git"
+    "type": "git",
+    "url": "https://github.com/IndustrialShields/node-red-contrib-simplecomm-node.git"
   },
   "author": "Jordi Casals <jcg@industrialshields.com>",
-  "license": "LGPLv3",
+  "license": "LGPL-3.0",
   "node-red": {
     "nodes": {
       "simplecomm-config": "nodes/simplecomm-config.js",
@@ -23,6 +23,6 @@
     }
   },
   "dependencies": {
-    "simplecomm": "https://github.com/IndustrialShields/node-simplecomm.git"
+    "simplecomm": "^1.0.2"
   }
 }
