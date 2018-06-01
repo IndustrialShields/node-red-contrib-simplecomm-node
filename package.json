@@ -9,7 +9,11 @@
 	  "industrial",
 	  "arduino"
   ],
-  "author": "Jordi Casals <jcg@industrialshields.com",
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/IndustrialShields/node-red-contrib-simplecomm-node.git"
+  },
+  "author": "Jordi Casals <jcg@industrialshields.com>",
   "license": "LGPLv3",
   "node-red": {
     "nodes": {
@@ -19,7 +23,6 @@
     }
   },
   "dependencies": {
-    "github": "^14.0.0",
-    "simplecomm": "git://github.com/IndustrialShields/node-simplecomm.git"
+    "simplecomm": "https://github.com/IndustrialShields/node-simplecomm.git"
   }
 }
